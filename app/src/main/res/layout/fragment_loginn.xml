@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:onClick="hideKeyBoard"
+        android:paddingHorizontal="@dimen/dp_24">
+
+        <ImageView
+            android:id="@+id/imageLogin"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:layout_marginTop="@dimen/dp_50"
+            android:src="@drawable/icon_mess_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textDescriptionLogin"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_11"
+            android:text="@string/txt_login"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_32"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLogin" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_60"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDescriptionLogin">
+
+            <RelativeLayout
+                android:id="@+id/relativeEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/textEmailLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_email"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/textDescriptionEmailLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textEmailLogin"
+                    android:layout_marginTop="@dimen/dp_7"
+                    android:hint="@string/txt_hint_email"
+                    android:inputType="textEmailAddress"/>
+
+                <ImageView
+                    android:id="@+id/imageEmailLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:src="@drawable/email" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativePassLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeEmailLogin"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/textPassLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_password"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/textDescriptionPassLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textPassLogin"
+                    android:layout_marginTop="@dimen/dp_7"
+                    android:hint="@string/txt_hint_pass"
+                    android:inputType="textPassword"/>
+
+                <ImageView
+                    android:id="@+id/imagePassLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:src="@drawable/pass" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textForgotPassLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativePassLogin"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="end"
+                android:text="@string/txt_forgot_password"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp_14" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textForgotPassLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_47"
+                android:background="@drawable/custom_login_denable"
+                android:text="@string/txt_login"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textRegister"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_38"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/txt_register"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLogin" />
+        <ProgressBar
+            android:id="@+id/progressLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> Chat</string>
+    <string name="txt_app"> Chat</string>
+    <!--    login-->
+    <string name="txt_login">Login</string>
+    <string name="txt_title_app"> Chat </string>
+    <string name="txt_email">EMAIL</string>
+    <string name="txt_hint_email">yourmail@gmail.com</string>
+    <string name="txt_hint_pass">********</string>
+    <string name="txt_password">PASSWORD</string>
+    <string name="txt_forgot_password">Forgot password?</string>
+    <string name="txt_register_span">Don\'t have account? Sign up now</string>
+    <!--    register-->
+    <string name="txt_register">Register</string>
+    <string name="txt_name">NAME</string>
+    <string name="txt_login_span">Have account? Login now</string>
+    <!--    message-->
+    <string name="txt_search_message">Search message</string>
+    <string name="txt_status_online">Online</string>
+    <string name="txt_status_offline">Offline</string>
+    <string name="txt_message">Message</string>
+    <string name="txt_no_result">No result</string>
+    <string name="txt_enter_message">Enter message</string>
+    <string name="txt_not_allow_permission_vi">Bạn bị ngố hả bạn ơi! Không cấp quyền đọc ảnh thì gửi kiểu gì?</string>
+
+    <!--friend-->
+    <string name="txt_search_friend">Search friend</string>
+    <string name="txt_friend">Friends</string>
+    <string name="txt_request">Request</string>
+    <string name="txt_request_friend">Add Friend</string>
+    <string name="txt_cancel_friend">UnFriend</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_accept">Accept</string>
+    <string name="txt_list_request_friend">Friend Request</string>
+    <string name="txt_list_send_friend">Send Request</string>
+    <string name="txt_title_friend">FRIEND</string>
+    <string name="txt_all_friend_title">ALL FRIENDS</string>
+    <string name="txt_request_friend_title">REQUEST</string>
+
+    <!--    profile-->
+    <string name="txt_language">Language</string>
+    <string name="txt_notification">Notification</string>
+    <string name="txt_version">Version app</string>
+    <string name="txt_hint_version">1.00</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_edit_profile">Edit profile</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_phone">PHONE NUMBER</string>
+    <string name="txt_date_of_birth">DATE OF BIRTH</string>
+    <string name="txt_profile">Profile</string>
+    <string name="txt_language_vi">Vietnamese</string>
+    <string name="txt_language_en">English</string>
+    <string name="txt_camera">Take photo</string>
+    <string name="txt_choose_photo">Choose photo</string>
+    <string name="txt_hint_phone_number">0999999999</string>
+    <string name="txt_hint_date">Choose date of birth</string>
+    <string name="txt_save_profile_success">Save profile success</string>
+    <string name="txt_notification_phone_number">Số điện thoại của bạn phải có 10 kí tự</string>
+
+
+    <!--    dialog-->
+    <string name="txt_notification_dialog">Notification</string>
+    <string name="txt_description_dialog">Are you sure you want to log out?</string>
+    <string name="txt_no">No</string>
+    <string name="txt_description_dialog_friend">Become a friend to be able to send a message to each other :3</string>
+    <string name="txt_ok">OK</string>
+</resources>

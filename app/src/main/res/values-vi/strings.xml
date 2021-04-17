@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> Chat</string>
+    <string name="txt_app"> Chat</string>
+    <!--    login-->
+    <string name="txt_login">Đăng nhập</string>
+    <string name="txt_hint_pass">********</string>
+    <string name="txt_title_app"> chat</string>
+    <string name="txt_email">EMAIL</string>
+    <string name="txt_hint_email">abc@gmail.com</string>
+    <string name="txt_password">MẬT KHẨU</string>
+    <string name="txt_forgot_password">Quên mật khẩu?</string>
+    <string name="txt_register_span">Chưa có tài khỏan? Đăng ký ngay</string>
+    <!--    register-->
+    <string name="txt_register">Đăng ký</string>
+    <string name="txt_name">HỌ VÀ TÊN</string>
+    <string name="txt_login_span">Đã có tài khoản? Đăng nhập ngay</string>
+    <!--    message-->
+    <string name="txt_status_online">Hoạt động</string>
+    <string name="txt_status_offline">Không hoạt động</string>
+    <string name="txt_search_message">Tìm kiếm tin nhắn</string>
+    <string name="txt_message">Tin nhắn</string>
+    <string name="txt_no_result">Không tìm thấy kết quả phù hợp</string>
+    <string name="txt_enter_message">Nhập tin nhắn</string>
+    <string name="txt_not_allow_permission_vi">Bạn bị ngố hả bạn ơi! Không cấp quyền đọc ảnh thì gửi kiểu gì?</string>
+
+    <!--friend-->
+    <string name="txt_search_friend">Tìm kiếm bạn bè</string>
+    <string name="txt_friend">Bạn bè</string>
+    <string name="txt_title_friend">BẠN BÈ</string>
+    <string name="txt_request">Yêu cầu</string>
+    <string name="txt_request_friend">Kết bạn</string>
+    <string name="txt_cancel_friend">Hủy bạn</string>
+    <string name="txt_cancel">Hủy</string>
+    <string name="txt_accept">Đồng ý</string>
+    <string name="txt_list_request_friend">Lời mời kết bạn</string>
+    <string name="txt_list_send_friend">Đã gửi kết bạn</string>
+    <string name="txt_all_friend_title">TẤT CẢ</string>
+    <string name="txt_request_friend_title">YÊU CẦU</string>
+
+    <!--    profile-->
+    <string name="txt_language">Ngôn ngữ</string>
+    <string name="txt_notification">Thông báo</string>
+    <string name="txt_version">Phiên bản ứng dụng</string>
+    <string name="txt_hint_version">1.00</string>
+    <string name="txt_logout">Đăng xuất</string>
+    <string name="txt_edit_profile">Chỉnh sửa thông tin</string>
+    <string name="txt_save">Lưu</string>
+    <string name="txt_phone">SỐ ĐIỆN THOẠI</string>
+    <string name="txt_date_of_birth">NGÀY SINH</string>
+    <string name="txt_profile">Cá nhân</string>
+    <string name="txt_language_vi">Tiếng Việt</string>
+    <string name="txt_language_en">Tiếng Anh</string>
+    <string name="txt_camera">Chụp ảnh</string>
+    <string name="txt_choose_photo">Chọn ảnh</string>
+    <string name="txt_hint_phone_number">0999999999</string>
+    <string name="txt_hint_date">Chọn ngày sinh</string>
+    <string name="txt_save_profile_success">Cập nhật trang cá nhân thành công</string>
+    <string name="txt_notification_phone_number">Số điện thoại của bạn phải bao gồm 10 chữ số</string>
+
+    <!--    dialog-->
+    <string name="txt_notification_dialog">Thông báo</string>
+    <string name="txt_description_dialog">Bạn có chắc chắn muốn đăng xuất không?</string>
+    <string name="txt_no">Không</string>
+    <string name="txt_description_dialog_friend">Trở thành bạn bè để có thể gửi tin nhắn cho nhau nhé :3</string>
+    <string name="txt_ok">OK</string>
+</resources>
