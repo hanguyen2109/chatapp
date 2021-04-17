@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="25dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageViewNotificationFriend"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/imageViewNotificationFriend"
+        android:gravity="center_vertical"
+        android:text="@string/txt_notification"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/imageViewNotificationFriend" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/imageViewNotificationFriend"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/textViewNotificationFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewLine"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/txt_description_dialog_friend"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonDialogFriendOk"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewNotificationFriend"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_login_enable"
+        android:text="@string/txt_ok"
+        android:textColor="@color/white"
+        android:layout_marginRight="30dp" />
+</RelativeLayout>

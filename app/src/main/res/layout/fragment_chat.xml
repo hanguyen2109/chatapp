@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey2"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/relaytiveTitleChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hideKeyBoard">
+
+        <ImageButton
+            android:id="@+id/imageBackChat"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageTitleChat"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toRightOf="@+id/imageBackChat"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textUserNameChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_toRightOf="@+id/imageTitleChat"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <ImageView
+            android:id="@+id/imageOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textUserNameChat"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageTitleChat"
+            android:src="@drawable/online" />
+
+        <TextView
+            android:id="@+id/textOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textUserNameChat"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_toRightOf="@+id/imageOnline"
+            android:text="@string/txt_status_online" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeBottomChat"
+        android:layout_below="@+id/relaytiveTitleChat"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/custom_recycler_message"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        app:stackFromEnd="true"
+        tools:listitem="@layout/item_chat_left" />
+
+    <ProgressBar
+        android:id="@+id/progressLoadChat"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_below="@+id/relaytiveTitleChat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeBottomChat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_above="@+id/layoutBottom"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_5">
+
+        <ImageButton
+            android:id="@+id/ImagePhotoChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo_chat" />
+
+        <ImageButton
+            android:id="@+id/imageSendChat"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@null"
+            android:foregroundGravity="center"
+            android:scaleType="center"
+            android:src="@drawable/send_mess_enable" />
+
+        <RelativeLayout
+            android:id="@+id/relativeInputChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_toLeftOf="@+id/imageSendChat"
+            android:layout_toRightOf="@+id/ImagePhotoChat"
+            android:background="@drawable/custom_input_chat"
+            android:padding="@dimen/dp_5">
+
+            <EditText
+                android:id="@+id/editInputMess"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toLeftOf="@+id/imageSticker"
+                android:background="@drawable/custom_input_chat"
+                android:clickable="true"
+                android:focusable="true"
+                android:hint="@string/txt_enter_message"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:id="@+id/imageSticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_25"
+                android:src="@drawable/sticker"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/imageRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_record"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txtNotAllowPer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_not_allow_permission_vi"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSticker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_250"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_250"
+            android:layout_below="@+id/recyclerSticker"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4" />
+    </RelativeLayout>
+</RelativeLayout>
